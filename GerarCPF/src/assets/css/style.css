@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Mono:wght@100&display=swap');
+
+:root {
+  --color-standard: rgb(10, 73, 109);
+  --font: 'Lora', serif;
+}
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--color-standard);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(66, 243, 234);
+}
+
+.container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.253);
+  margin: 150px auto;
+  padding: 20px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 600px;
+  text-align: center;
+
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.315);
+}
+
+.container:hover {
+  animation-name: boxshadow;
+  animation-duration: 1s;
+  box-shadow: 3px 3px 20px 10px rgba(0, 0, 0, 0.658);
+}
+
+@keyframes boxshadow {
+  0% {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.315);
+  }
+
+  100% {
+    box-shadow: 3px 3px 20px 10px rgba(0, 0, 0, 0.658);
+  }
+}
+
+.container > h1 {
+  font-family: var(--font);
+  font-size: 3em;
+}
+
+.display {
+  color: white;
+}
+
+.footer {
+  font-size: 2.3em;
+  color: white;
+  
+  text-align: center;
+}
+
+.gerar {
+  border: none;
+  border-radius: 5px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  cursor: pointer;
+
+  background-color: rgba(0, 0, 0, 0.418);
+  color: white;
+
+  padding: 10px;
+  margin: 20px;
+
+
+}
+
+.gerar:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.gerar:active {
+  background-color: rgb(8, 38, 48);
+}
+
+.cpf-gerado {
+  box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.226);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  margin: 10px;
+  padding: 10px;
+  
+}
+

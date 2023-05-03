@@ -1,0 +1,103 @@
+:root {
+    --cor-back: #78c9b1;
+    --font: Arial, Helvetica, sans-serif;
+    --btn-color: rgba(128, 128, 128, 0.26);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+body {
+    position: relative;
+    background-image: linear-gradient(to bottom left, var(--cor-back), #222);
+    background-color: var(--cor-back);
+    height: 100vh;
+
+}
+
+section#lobby {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.404);
+    min-width: 200px;
+    max-width: 300px;
+
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 20px #2d31309d;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#lobby:hover {
+    box-shadow: 1px 5px 30px #2d3130f8;
+}
+
+section#lobby > h1 {
+    padding: 10px;
+    font-family: var(--font);
+    font-size: 2em;
+    text-align: center;
+}
+
+
+#calculadora {
+    margin: auto;
+}
+
+#calc {
+    width: 100%;
+    text-align: right;
+    font-family: var(--font);
+    font-size: 2em;
+    border: 1px solid rgba(104, 101, 101, 0.575);
+    color: rgb(0, 0, 0);
+}
+
+p.p-btn {
+    padding: 1px;
+    width: 500px;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 0px;
+    border: 0px;
+    font-size: 1.5em;
+    background-color: var(--btn-color);
+    cursor: pointer;
+    animation: none;
+}
+
+.btn:hover {
+    background-color: rgba(88, 88, 88, 0.26);
+}
+
+#del {
+    letter-spacing: -6px;
+}
+
+@keyframes hover-btn {
+    0% {
+        background-color: (--btn-color);
+    }
+
+    50% {
+        background-color: rgba(88, 88, 88, 0.26);
+    }
+
+    100% {
+        background-color: var(--btn-color);
+    }
+}
+
+.hover-btn {
+    animation-name: hover-btn;
+    animation-duration: 200ms;
+}
+
+

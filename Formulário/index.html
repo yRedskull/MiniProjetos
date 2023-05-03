@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Formulário</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <form action="/" method="post" class="form">
+            <label>Nome:</label><br>
+            <input type="text" class="name valid" placeholder="Digite seu Nome"><br>
+            <label>Sobrenome:</label><br>
+            <input type="text" class="surname valid" placeholder="Digite seu Sobrenome"><br>
+            <label>CPF:</label><br>
+            <input type="text" class="cpf valid" size="14" maxlength="14" placeholder="Digite seu CPF"><br>
+            <label>Usuário:</label><br>
+            <input type="text" class="user valid" placeholder="Digite o nome de Usuário"><br>
+            <div>
+                <label>Senha:</label><br>
+                <input type="password" class="password valid" placeholder="Digite sua Senha">
+                <span class="lnr lnr-eye"></span>
+            </div>
+            <br>
+            <div>
+                <label>Repetir Senha:</label><br>
+                <input type="password" class="repeat-password valid" placeholder="Digite sua Senha novamente">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/validaCPF.js"></script>
+</body>
+</html>

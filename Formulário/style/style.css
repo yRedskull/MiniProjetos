@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Mono:wght@100&display=swap');
+
+:root {
+    --color-standard: rgb(67, 191, 212);
+    --font: 'Lora', serif;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--color-standard);
+}
+
+div {
+    position: relative;
+}
+
+.container {
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.315);
+}
+
+.container > ul {
+    list-style-position: inside;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.container > h1 {
+    font-family: var(--font);
+    font-size: 3em;
+}
+
+.container label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.container input {
+    width: 100%;
+    font-size: 1.7em;
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+
+.container > form > button {
+    background-color: rgb(7, 134, 156);
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 1.6em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container > form > button:hover {
+    background-color: rgb(10, 101, 117);
+    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.212);
+}
+
+.container > form > button:active {
+    background-color: rgb(3, 68, 94);
+}
+
+.error-text {
+    font-size: 15px;
+    color: red;
+}
+
+.lnr-eye {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.lnr-eye-clicked {
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+}
+
+.lnr-eye:hover {
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            height: 94vh;
+            background: linear-gradient(to bottom right, rgb(67, 124, 248), rgba(0, 0, 0, 0.938)) ;            
+        }
+        
+        section.home {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-flow: row;
+            flex-wrap: wrap;
+
+            margin: 50px auto;
+            padding: 10px;
+        }
+
+        div.links {
+            background-color: rgba(255, 0, 34, 0.822);
+            min-width: 300px;
+            max-width: 500px;
+            border: 3px solid black;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        div.links:hover {
+            animation-name: elevacao;
+            animation-duration: 1s;
+            box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.541);
+            margin-right: 20px;
+        }
+
+        @keyframes elevacao {
+            0% {
+                margin-right: 10px;
+                box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.562);
+            }
+
+            100% {
+                margin-right: 20px;
+                box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.541)
+            }
+        }
+
+        div.links > p {
+            color: rgb(230, 230, 230);
+            font-size: 1.3em;
+            padding: 10px;
+            margin: 10px;
+        }
+        div > a {
+            text-decoration: none;
+            color: white;
+            font-size: 3em;
+            padding: 3px;
+        }
+
+        a:hover {
+            color: rgb(243, 164, 99);
+        }
+    </style>
+</head>
+<body>
+    <section class="home">
+        <div class="links">
+            <a href="Calculadora/" title="Calculadora/" target="_blank">Calculadora</a>
+            <p>
+                Uma simples calculadora.
+            </p>
+        </div>
+        <div class="links">
+            <a href="Formulário/" title="Formulário/" target="_blank">Formulário</a>
+            <p>
+                Formulário com regras, feito em Javascript.
+            </p>
+        </div>
+        <div class="links">
+            <a href="Timer/" title="Timer/" target="_blank">Timer</a>
+            <p>
+                Timer contador.
+            </p>
+        </div>
+        <div class="links">
+            <a href="GerarCPF/public/" title="GerarCPF/public" target="_blank">Gerador de CPF</a>
+            <p>
+                Gera CPFs com o algoritmo da Receita Federal Brasileira.
+            </p>
+        </div>
+        <div class="links">
+                <a href="ValidarCPF/" title="ValidarCPF/" target="_blank">Validador de CPF</a>
+                <p>
+                    Valida CPFs com o algoritmo da Receita Federal Brasileira.
+                </p>
+        </div>
+        <div class="links">
+            <a href="GerarSenha/public" title="GerarSenha/public" target="_blank">Gerador de Senha</a>
+            <p>
+                Gera senhas aleatórias conforme as opções.
+            </p>
+    </div>
+        
+        
+    </section>
+</body>
+</html>
