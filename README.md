@@ -1,3 +1,3 @@
 # MiniProjetos
 
-## **Veja [aqui](https://yredskull.github.com/MiniProjetos) os `Projetos`**
+## **Veja [aqui](https://yredskull.github.io/MiniProjetos) os `Projetos`**
