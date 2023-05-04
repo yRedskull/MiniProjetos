@@ -38,13 +38,21 @@
             padding: 10px;
             margin: 10px;
             border-radius: 10px;
+            
+            
+            animation-name: elevacao;
+            animation-duration: 1s;
+            box-shadow: 8px 8px 8px 3px rgba(0, 0, 0, 0.562);
+            margin-right: 20px;
+
+            
         }
 
         div.links:hover {
-            animation-name: elevacao;
+            animation-name: declinacao;
             animation-duration: 1s;
-            box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.541);
-            margin-right: 20px;
+            margin-right: 10px;
+            box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.562);
         }
 
         @keyframes elevacao {
@@ -55,7 +63,20 @@
 
             100% {
                 margin-right: 20px;
-                box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.541)
+                box-shadow: 8px 8px 8px 3px rgba(0, 0, 0, 0.562)
+            }
+        }
+
+        @keyframes declinacao {
+            0% {
+                margin-right: 20px;
+                box-shadow: 8px 8px 8px 3px rgba(0, 0, 0, 0.562)
+            }
+
+            100% {
+                margin-right: 10px;
+                box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.562);
+                
             }
         }
 
