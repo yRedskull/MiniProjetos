@@ -107,11 +107,11 @@ class Calculadora {
 
     result = () => {
         try{
-            const geval = eval(this.display.value)
-            if (typeof geval == "number") {
-                this.display.value = eval(this.display.value)
-                this.resultTrue = true
-            } else alert('Conta inválida!')
+            const resultado =  eval(this.display.value.replace(',', '.'))
+            console.log(resultado)
+            this.display.value = String(resultado).replace('.', ',')
+            this.resultTrue = true
+
         } catch (e) {
             alert('Conta inválida!')
             this.display.value = ''
