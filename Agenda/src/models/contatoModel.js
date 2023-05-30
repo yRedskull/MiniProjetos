@@ -1,14 +1,12 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
-const { dataAgora } = require('../static/static')
 
 const ContatoSchema = new mongoose.Schema({
     nome: {type: String, required: true},
     sobrenome: {type: String, required: false, default:''},
     email: {type: String, required: false, default:''},
     telefone: {type: String, required: false, default:''},
-    criadoEm: {type: String, default: dataAgora()
-    },
+    criadoEm: {type: Date, default: Date.now }
 })
 
 const ContatoModel = mongoose.model('Contato', ContatoSchema)
@@ -48,6 +46,20 @@ class Contato {
             email: this.body.email,
             telefone: this.body.telefone,
         }
+    }
+
+    async edit(id) {
+        if(typeof id !== 'string') return
+        this.valida()
+        if(this.errors.length > 0) return
+        this.contato = await ContatoModel.findByIdAndUpdate(id, this.body, { new: true })
+    }
+
+    async buscaPorId(id) {
+        if(typeof id !== 'string') return 
+
+        const user = await ContatoModel.findById(id)
+        return user
     }
 }
 
